@@ -2,11 +2,15 @@
   "name": "project-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js",
+    "build": "NODE_ENV=production node server.js"
   },
-  "keywords": [],
+  "keywords": [
+    "docker",
+    "node"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -14,7 +18,9 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.4",
+    "mongoose": "^7.0.4"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.22"
   }
 }
